@@ -1,3 +1,13 @@
+add to line 7 in songs/index.html.erb: 
+<a href="<%= song_path(song) %>">
+ <%= song.artist_name %>
+    -
+    <%= song.title %>
+    </a>
+
+Line 7 in artists/index:
+    <%= artist.song_count %> <%= "song".pluralize(artist.song_count) %>
+    
 # Displaying Associations Rails
 
 In the previous unit, we used validations and forms to create a management
