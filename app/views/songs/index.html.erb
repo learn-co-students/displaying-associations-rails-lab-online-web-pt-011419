@@ -1,0 +1,7 @@
+<h1> Index of Songs </h1>
+
+<ul>
+    <%=@songs.each do |s|%>
+        <li> <%=s.artist_name%> - <%=link_to s.title, song_path(s) %></li>
+    <% end %>
+</ul>
